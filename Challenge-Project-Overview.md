@@ -4,7 +4,7 @@
 >
 > > 💡 **These grey text instructions are just for you, the team's Challenge Advisor; please delete them once you have completed the steps below.**
 >
-> We've pre-populated this Challenge Project Overview page — which is what will be shared with your Break Through Tech student team in August — using the details from your submission form. You should have received an email inviting you to join this repo as a Collaborator, enabling you to add files and make edits.
+> We've pre-populated this Challenge Project Overview page — which is what will be shared with your Break Through Tech student team in August — using the details from your submission form. You should have received an email inviting you to join this repo as a Collaborator, which will allow you to add files and make edits.
 > 
 > In order for your project to be finalized and assigned to a team, please:
 > 1. **Review all sections below** and update or expand any content as needed, making sure to address the SME Feedback in the section immediately below. Look for square brackets to find the places below that require additional inputs from you (e.g., "About [Company / Org Name]").
@@ -18,35 +18,46 @@
 
 ---
 
-### 🔍 SME Feedback from the Break Through Tech Evaluation Team
+## 📋 BTT Internal Evaluation Notes
+*(This section is for BTT staff only — remove before sharing with students)*
 
-*Challenge Advisor: Please address the following feedback by editing this page. Your AI Studio Coach can help make project adjustments as needed, too. In addition to the grey section above, this section should be removed before sharing the repo with your student team.*
+| Check | Status | Notes |
+|-------|--------|-------|
+| Python Compatibility | 🟢 | The project focuses on using Python for NLP tasks, ensuring compatibility with students' skill sets in ML Foundations. |
+| Data Readiness | 🟢 | The dataset is accessible and already structured in Excel format, making it ready for use with minimal cleaning required. |
+| Resource Check | 🟢 | Free-tier tools like Google Colab are adequate for the project's needs and pose no barriers for students. |
+
+**Student Fit Score:** 8/10  
+**Technical Depth Score:** 7/10  
+**Overall Recommendation:** REVISE
+
+**Advisor Feedback Draft:**
+The project leverages real-world data, providing a valuable learning opportunity. However, ensure students are equipped with the necessary NLP knowledge early on. Additionally, consider simplifying the model's expectations for iterative development to allow space for learning. Encourage students to document the challenges they face in model development for reflective learning. Overall, this project appears to be a suitable fit for the fellows with some adjustments.
 
 ---
 
-# [Project Title]
 
-**Company / Org:** [Company / Org Name]  
-**Challenge Advisor:** [Name, Title, Email]  
+# Marsh Object Detection Model
+
+**Company / Org:** Marsh Mclennan  
+**Challenge Advisor:** Kamraan Kamal, kamraan.kamal@marsh.com  
 **Program:** Break Through Tech AI Studio - Fall 2026
 
 ---
 
-## 🏢 About [Company / Org Name]
+## 🏢 About Marsh Mclennan
 
-[2-3 sentences about your company: what you do, your industry, etc. You may also choose to specify your specific department or team.]
+Marsh McLennan is a global leader in insurance brokerage and risk management, helping clients identify and manage risk effectively. Our initiatives aim to improve workplace safety and reduce liability through data-driven insights and innovative solutions.
 
 ---
 
 ## 🎯 The Challenge
 
 ### Project Summary
-[In 2-3 sentences, describe what you're asking the team to do. Be specific about the type of data, ML techniques, and potential impact.]
-
-> **Example:** "In this project, your team will use customer transaction data and classification algorithms to build a model that predicts which users are likely to churn. This will help our retention team prioritize outreach."
+In this project, you will use hospital emergency patient injury descriptions from the U.S. Consumer Product Safety Commission’s National Electronic Injury Surveillance System (CPSC NEISS), Natural Language Processing (NLP) and Large Language Model (LLM) techniques to extract the objects involved in injury incidents. This will help our company address the business problem of workplace and product-related injury prevention, reduce injury-related costs, and improve safety and loss-prevention strategies.
 
 ### Success Criteria
-[What does success look like? Describe evaluation metrics (accuracy, F1 score, etc.) or qualitative outcomes that would make this project valuable to your company.]
+The model should be able to correctly extract and classify the objects mentioned in a testing set of anonymized workers' compensation accident descriptions. Success will also be measured by comparing the model's performance against the company's existing object detection model.
 
 ### Project Milestones
 
@@ -54,9 +65,9 @@ Use these milestones to guide your work. Your team will create a **GitHub Projec
 
 | Month | Milestone | Key Activities |
 |-------|-----------|----------------|
-| **September** | [e.g., Data Understanding] | [e.g., Explore dataset, handle missing values, document findings] |
-| **October** | [e.g., Model Development] | [e.g., Train baseline model, experiment with approaches, iterate] |
-| **November** | [e.g., Evaluation & Presentation] | [e.g., Finalize model, prepare presentation, document results] |
+| **September** | Data Understanding | Explore dataset, handle missing values, document findings |
+| **October** | Model Development | Train baseline model, experiment with approaches, iterate |
+| **November** | Evaluation & Presentation | Finalize model, prepare presentation, document results |
 
 > **Note for the team:** Please create a GitHub Projects board in this repository to break these milestones into weekly tasks. Go to the **Projects** tab → **New project** → Choose **Board** → Add columns for each month.
 
@@ -64,27 +75,29 @@ Use these milestones to guide your work. Your team will create a **GitHub Projec
 
 ## 📊 Dataset
 
-**Name and Source:** [Dataset name and where it's from]  
-**Format:** [e.g., CSV, JSON, images]  
-**Size:** [Approximate size in MB/GB]  
+**Name and Source:** National Electronic Injury Surveillance System (CPSC NEISS)  
+**Format:** Excel (.xlsx)  
+**Size:** 1gb to 5gb  
 **Location:** [Link to dataset or instructions for accessing it]
 
 ### Key Details
-- [Brief description of what's in the data]
-- [Any known limitations or preprocessing needed]
+- Publicly available text data from the U.S. Consumer Product Safety Commission’s National Electronic Injury Surveillance System (CPSC NEISS) stored in Excel (.xlsx) format. Source link: https://www.cpsc.gov/Research--Statistics/NEISS-Injury-Data
+- No significant known limitations or preprocessing needed.
 - [Link to data dictionary or documentation, if available]
 
 ---
 
 ## 🛠️ Suggested Approach
 
-**ML Problem Type:** [e.g., Classification, Regression, NLP, Computer Vision, LLM/RAG]
+**ML Problem Type:** Natural Language Processing (NLP)
 
 **Recommended Libraries:**
-- [e.g., pandas, scikit-learn, TensorFlow, Hugging Face]
+- Natural Language Processing (NLP)
+- Large Language Models (LLMs)/ Generative AI
+- Classification
 
 **Evaluation Metrics:**
-- [e.g., Accuracy, Precision/Recall, RMSE, BLEU score]
+- Accuracy, Precision/Recall
 
 ---
 
@@ -93,16 +106,16 @@ Use these milestones to guide your work. Your team will create a **GitHub Projec
 The following resources will help your team understand the problem space and potential technical approaches for this project:
 
 **Background Reading:**
-- [e.g., Link to an article or blog post about the problem domain]
-- [e.g., Link to an industry report or case study]
+- [Link to an article or blog post about the problem domain]
+- [Link to an industry report or case study]
 
 **Technical Tutorials:**
-- [e.g., Link to a free tutorial on the ML technique(s) involved]
-- [e.g., Link to documentation for a key library or tool]
+- [Link to a free tutorial on the ML technique(s) involved]
+- [Link to documentation for a key library or tool]
 
 **Code Examples:**
-- [e.g., Link to a relevant GitHub repo]
-- [e.g., Link to a sample implementation or starter code]
+- [Link to a relevant GitHub repo]
+- [Link to a sample implementation or starter code]
 
 **Other:**
 - [Links to any additional resources — e.g., papers, videos, podcasts, etc.]
@@ -114,13 +127,13 @@ The following resources will help your team understand the problem space and pot
 ## 🤝 How We'll Work Together
 
 **Check-ins:** During our biweekly 60-min AI Studio Lab Section meeting block (2nd and 4th week of every month)  
-**Communication:** [e.g., Slack (Break Through Tech workspace) or email]  
-**Response time:** [e.g., Within 48 hours on weekdays]  
+**Communication:** Slack (Break Through Tech workspace)  
+**Response time:** Within 48 hours on weekdays  
 
 **Recommended Tools:**
-- **Coding:** [e.g., Google Colab, VS Code]
-- **Collaboration:** [e.g., GitHub, Notion]
-- **Virtual Meetings:** [e.g., Zoom, Google Meet]
+- **Coding:** Google Colab
+- **Collaboration:** GitHub, Notion
+- **Virtual Meetings:** Zoom, Google Meet
 
 ---
 
@@ -130,10 +143,10 @@ The following resources will help your team understand the problem space and pot
 2. **Begin reviewing the dataset** using the link above
 3. **Read the GitHub Projects documentation** [here](https://docs.github.com/en/issues/planning-and-tracking-with-projects/learning-about-projects/about-projects)
 
-I’m excited to work with you!
+I'm excited to work with you!
 
 ---
 
 ## ❓ Questions?
 
-Please bring any questions to our first meeting during the week of August 24th (Break Through Tech’s Bridge to Studio - Session B). 
+Please bring any questions to our first meeting during the week of August 24th (Break Through Tech's Bridge to Studio - Session B).
